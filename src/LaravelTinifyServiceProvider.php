@@ -1,6 +1,6 @@
 <?php
 
-namespace michaelthuren\LaravelTinify;
+namespace michaelthuren\TinifyLaravel;
 
 use Illuminate\Support\ServiceProvider;
 use Tinify\Tinify;
