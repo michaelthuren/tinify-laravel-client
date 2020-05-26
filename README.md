@@ -4,19 +4,19 @@ Tinify API support for Laravel 6+
 ## Install
 
 ``` bash
-$ composer require michaelthuren/tinyfy-laravel-client
+$ composer require michaelthuren/tinify-laravel-client
 ```
 
 Add this to your config/app.php, 
 
 under "providers":
 ```php
-michaelthuren\tinyfy-laravel-client\TinifyLaravelServiceProvider::class,
+michaelthuren\tinify-laravel-client\TinifyLaravelServiceProvider::class,
 ```
 under "aliases":
 
 ```php
-'Tinify' => michaelthuren\tinyfy-laravel-client\Facades\Tinify::class
+'Tinify' => michaelthuren\tinify-laravel-client\Facades\Tinify::class
 ```
 
 
