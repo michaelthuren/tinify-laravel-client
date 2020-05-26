@@ -1,0 +1,24 @@
+{
+  "name": "michaelthuren/tinify-laravel-client",
+  "type": "library",
+  "description": "Tinify API support with laravel (TinyPNG)",
+  "keywords": ["tinify","tinypng", "laravel", "client"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Michael Thuren",
+      "email": "michael.thuren@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.0",
+    "illuminate/support": "^6.0",
+    "tinify/tinify":"*"
+  },
+  "autoload": {
+    "psr-4": {
+      "michaelthuren\\tinyfy-laravel-client\\": "src"
+    }
+  },
+  "minimum-stability": "stable"
+}
