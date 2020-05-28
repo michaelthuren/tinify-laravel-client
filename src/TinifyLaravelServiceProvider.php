@@ -34,7 +34,7 @@ class TinifyLaravelServiceProvider extends ServiceProvider
     {
         $configPath = __DIR__ . '/../config/tinify.php';
         $this->mergeConfigFrom($configPath, 'tinify');
-        $this->app->bind('tinify', 'michaelthuren\tinify-laravel-client\Services\TinifyService');
+        $this->app->bind('tinify', 'MichaelThuren\TinifyLaravel\Services\TinifyService');
 
     }
 
