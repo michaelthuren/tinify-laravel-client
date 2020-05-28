@@ -1,6 +1,6 @@
 <?php
 
-namespace michaelthuren\TinifyLaravel\Facades;
+namespace MichaelThuren\TinifyLaravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

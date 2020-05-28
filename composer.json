@@ -17,7 +17,14 @@
   },
   "autoload": {
     "psr-4": {
-      "michaelthuren\\tinify-laravel-client\\": "src"
+      "MichaelThuren\\TinifyLaravel\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MichaelThuren\\TinifyLaravel\\TinifyLaravelServiceProvider"
+      ]
     }
   },
   "minimum-stability": "stable"
