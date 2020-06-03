@@ -1,31 +1,36 @@
 {
-  "name": "michaelthuren/tinify-laravel-client",
-  "type": "library",
-  "description": "Tinify API support with laravel (TinyPNG)",
-  "keywords": ["tinify","tinypng", "laravel", "client"],
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Michael Thuren",
-      "email": "michael.thuren@gmail.com"
-    }
-  ],
-  "require": {
-    "php": ">=7.2.0",
-    "illuminate/support": "^6.0",
-    "tinify/tinify":"*"
-  },
-  "autoload": {
-    "psr-4": {
-      "MichaelThuren\\TinifyLaravel\\": "src"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "MichaelThuren\\TinifyLaravel\\TinifyLaravelServiceProvider"
-      ]
-    }
-  },
-  "minimum-stability": "stable"
+    "name": "michaelthuren/tinify-laravel-client",
+    "type": "library",
+    "description": "Tinify API support with laravel (TinyPNG)",
+    "keywords": [
+        "tinify",
+        "tinypng",
+        "laravel",
+        "client"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Thuren",
+            "email": "michael.thuren@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "illuminate/support": "^6.0",
+        "tinify/tinify": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "MichaelThuren\\TinifyLaravel\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MichaelThuren\\TinifyLaravel\\TinifyLaravelServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
 }
