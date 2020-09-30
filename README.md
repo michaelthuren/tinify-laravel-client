@@ -1,5 +1,5 @@
-# Tinify Laravel 6+ Client
-Tinify API support for Laravel 6+
+# Tinify Laravel Client
+Supported laravel versions 5.8 - 8+
 
 ## Install
 
