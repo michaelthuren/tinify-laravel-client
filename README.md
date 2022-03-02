@@ -1,5 +1,5 @@
 # Tinify Laravel Client
-Supported laravel versions 5.8 - 8+
+Supported laravel versions 9+
 
 ## Install
 
