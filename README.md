@@ -8,15 +8,18 @@ $ composer require michaelthuren/tinify-laravel-client
 ```
 
 Add this to your config/app.php, 
-
 under "providers":
-```php
-michaelthuren\tinify-laravel-client\TinifyLaravelServiceProvider::class,
-```
-under "aliases":
 
 ```php
-'Tinify' => michaelthuren\tinify-laravel-client\Facades\Tinify::class
+/*
+ * Package Service Providers...
+ */
+MichaelThuren\TinifyLaravel\TinifyLaravelServiceProvider::class,
+```
+
+under "aliases":
+```php
+'Tinify' => MichaelThuren\TinifyLaravel\Facades\Tinify::class,
 ```
 
 
@@ -36,7 +39,6 @@ S3_BUCKET=
 ```php
 $result = Tinify::fromFile('\path\to\file');
 
-
 $result = Tinify::fromBuffer($source_data);
 
 $result = Tinify::fromUrl($image_url);
@@ -46,6 +48,31 @@ $result->toFile('\path\to\save');
 
 /** To get image as data **/
 $data = $result->toBuffer();
+
+```
+
+Use try & catch while using the api , 
+there might be some errors in conversion 
+```php
+<?php 
+
+# import the utility 
+use Tinify;
+
+$converted = false;
+try {
+  $result = Tinify::fromFile($from_file_path)->toFile($to_file_path);
+  $converted = true;
+} catch (\Exception $ex) {
+    $debugg = $ex->getMessage();
+    Log::error($debugg);
+    $converted = false;
+}
+
+if($converted){
+  // do something ...
+}
+
 ```
 
 ```php
